@@ -5,9 +5,9 @@
 		$nome = $_POST['nome'];
 		$sql->bind_param("s", $nome); 
 		if($sql->execute()) {
-			$success_message = "Added Successfully";
+			$success_message = "Cadastrado com sucesso";
 		} else {
-			$error_message = "Problem in Adding New Record";
+			$error_message = "Erro ao cadastrar";
 		}
 		$sql->close();   
 		$conn->close();

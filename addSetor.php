@@ -75,7 +75,7 @@ $conn->close();
 			<tr class="table-row" id="row-<?php echo $row["id"]; ?>"> 
 				<td class="table-row"><?php echo $row["nome"]; ?></td>
                 <!--ação-->        
-				<td class="table-row" colspan="2"><a href="editSetor.php?id=<?php echo $row["id"]; ?>" class="link"><img title="Edit" src="icon/edit.png"/></a> <a href="deleteSetor.php?id=<?php echo $row["id"]; ?>" class="link"><img name="delete" id="delete" title="Delete" onclick="return confirm('Are you sure you want to delete?')" src="icon/delete.png"/></a></td>
+				<td class="table-row" colspan="2"><a href="editSetor.php?id=<?php echo $row["id"]; ?>" class="link"><img title="Edit" src="icon/edit.png"/></a> <a href="deleteSetor.php?id=<?php echo $row["id"]; ?>" class="link"><img name="delete" id="delete" title="Delete" onclick="return confirm('Tem certeza de que deseja deletar?')" src="icon/delete.png"/></a></td>
 			</tr>
 			<?php
                     }

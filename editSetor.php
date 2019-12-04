@@ -54,7 +54,7 @@
 			<td><input type="text" name="nome" class="txtField" value="<?php echo $row["nome"]?>"></td>
 		</tr>
 		<tr class="table-row">
-			<td colspan="2"><input type="submit"  name="submit" value="Submit" class="demo-form-submit"></td>
+			<td colspan="2"><input type="submit"  name="submit" value="Alterar" class="demo-form-submit"></td>
 		</tr>
 	</tbody>	
 </table>

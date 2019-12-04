@@ -66,7 +66,7 @@ $conn->close();
 		<thead>
 			 <tr>
 				<th class="table-header" width="40%"> Nome do Colaborador </th>
-				<th class="table-header" width="40%" colspan="2"> AÇÃO </th>
+				<th class="table-header" width="40%" colspan="2" text-align="right"> AÇÃO </th>
 			  </tr>
 		</thead>
 		<tbody>		
@@ -77,7 +77,7 @@ $conn->close();
 			<tr class="table-row" id="row-<?php echo $row["id"]; ?>"> 
 				<td class="table-row"><?php echo $row["nome"]; ?></td>
                 <!--ação-->        
-				<td class="table-row" colspan="2"><a href="editColaborador.php?id=<?php echo $row["id"]; ?>" class="link"><img title="Edit" src="icon/edit.png"/></a> <a href="deleteColaborador.php?id=<?php echo $row["id"]; ?>" class="link"><img name="delete" id="delete" title="Delete" onclick="return confirm('Are you sure you want to delete?')" src="icon/delete.png"/></a></td>
+				<td class="table-row" colspan="2" text-align="right"><a href="editColaborador.php?id=<?php echo $row["id"]; ?>" class="link"><img title="Edit" src="icon/edit.png"/></a> <a href="deleteColaborador.php?id=<?php echo $row["id"]; ?>" class="link"><img name="delete" id="delete" title="Delete" onclick="return confirm('Tem certeza de que deseja deletar?')" src="icon/delete.png"/></a></td>
 			</tr>
 			<?php
                     }
